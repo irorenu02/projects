@@ -1,0 +1,111 @@
+import datetime
+import time
+import calendar
+
+
+# IF & IF-ELSE STATEMENTS
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("The number is positive")
+
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+# Required arguments
+def introduce(name, age=18):
+    return f"My name is {name} and I am {age} years old."
+
+print(introduce("Alice"))
+
+# Keyword arguments
+def introduce(name, age=18):
+    return f"My name is {name} and I am {age} years old."
+
+print(introduce(age=25, name="Bob"))
+
+# Default arguments
+def introduce(name, age=18):
+    return f"My name is {name} and I am {age} years old."
+
+print(introduce("Charlie", 30))
+
+# Variable-length arguments (*args, **kwargs)
+def display_info(*args, **kwargs):
+    print("Positive arguments:", args)
+    print("Keyword arguments:", kwargs)
+
+display_info(1,2,3, name="Alice", age=22)
+
+# LAMBDA FUNCTION
+multiply = lambda a, b: a * b
+print("Product: ", multiply(3,4))
+
+# RETURN STATEMENT
+def add(a, b):
+    return a + b
+
+result = add(5,7)
+print("Sum: ", result)
+
+
+
+# SCOPE OF VARIABLES
+x = 100  # global variable
+
+def test_scope():
+    y = 50  # local variable
+    print("Inside function, local y:", y)
+
+test_scope()
+
+# GLOBAL VS LOCAL VARIABLES
+value = 10
+
+def modify():
+    global value
+    value = 25
+    print("Inside function:", value)
+
+modify()
+print("Outside function:", value)
+
+# DATE AND TIME FORMATS
+now = datetime.datetime.now()
+
+formatted = now.strftime("%Y-%m-%d %H:%M:%S")
+print("Formatted Date-Time: ", formatted)
+
+# TIME TUPLE
+time_tuple = time.localtime()
+print("Time Tuple: ", time_tuple)
+
+print("Year: ", time_tuple.tm_year)
+print("Month: ", time_tuple.tm_mon)
+print("Day: ", time_tuple.tm_mday)
+
+# CURRENT TIME
+print("Timestamp: ", time.time())
+print("Current Date-Time: ", datetime.datetime.now())
+
+# CALENDAR
+year = 2026
+month = 4
+
+print(calendar.month(year,month))
+
+# TIME MODULE
+print("Current time (seconds since epoch): ", time.time())
+print("Local time: ", time.ctime())
+
+# delay execution
+print("Waiting for 2 seconds...")
+time.sleep(2)
+print("Done!")
+
+# CALENDAR MODULE
+year = 2024
+print("Is leap year?", calendar.isleap(year))
+print(calendar.calendar(2024))

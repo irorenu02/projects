@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="login-page">
+		<main class="login-container">
+			<section class="login-card" aria-labelledby="login-heading">
+				<h1 id="login-heading">Login</h1>
+
+				<form action="dashboard.html" method="get">
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username" required />
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" required />
+					</div>
+
+					<button type="submit" class="login-button">Login</button>
+				</form>
+
+				<p class="account-prompt">
+					Don't have an account? <a href="register.html">Register here</a>
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
