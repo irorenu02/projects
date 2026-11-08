@@ -1,0 +1,3 @@
+0001,Juan Dela Cruz,dasdas,3700.0
+0002,Juana Dela Cruzo,sadsad,4700.0
+0003,Julia Dela Cruza,asdasd,5700.0

@@ -1,0 +1,5 @@
+Lebron,Curry,Durant,2000,Male,5,300
+Juan,Dela,Cruz,1999,Male,6,360
+Hickie,Hick,Hockey,2345,Prefer not to say,1,60
+April,Ann,Autentico,3000,Prefer not to say,1,40
+khgjh,hgjhgjh,kbhbkhg,200545,Male,10,600
