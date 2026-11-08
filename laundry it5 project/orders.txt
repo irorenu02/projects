@@ -1,0 +1,6 @@
+next_id:1008
+1001,ren,Wash/Dry/Fold,3.5,Completed
+1002,jhay,Wash,3.0,Pending
+1004,yana,Fold,5.0,Drying
+1006,evan,Wash/Dry/Fold,5.0,Drying
+1007,Juan Dela,Wash/Dry/Fold,3.5,Pending
